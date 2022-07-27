@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/nav_skills_list">
+    <fragment
+        android:id="@+id/nav_adv_list"
+        android:name="it.polito.g20app.TimeSlotListFragment"
+        android:label="My Time Slots">
+        <action
+            android:id="@+id/action_nav_adv_list_to_timeSlotEditFragment"
+            app:destination="@id/timeSlotEditFragment" />
+        <action
+            android:id="@+id/action_nav_adv_list_to_nav_slot_details"
+            app:destination="@id/nav_slot_details" />
+        <action
+            android:id="@+id/action_nav_adv_list_to_nav_rating_fragment"
+            app:destination="@id/nav_rating_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_show_profile"
+        android:name="it.polito.g20app.ShowProfileFragment"
+        android:label="My Profile">
+        <action
+            android:id="@+id/action_nav_show_profile_to_nav_edit_profile"
+            app:destination="@id/nav_edit_profile" />
+        <action
+            android:id="@+id/action_nav_show_profile_to_ratingListFragment"
+            app:destination="@id/ratingListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_edit_profile"
+        android:name="it.polito.g20app.EditProfileFragment"
+        android:label="Edit Profile" />
+    <fragment
+        android:id="@+id/nav_slot_details"
+        android:name="it.polito.g20app.TimeSlotDetailsFragment"
+        android:label="Time Slot Details">
+        <action
+            android:id="@+id/action_nav_slot_details_to_chat_fragment"
+            app:destination="@id/nav_chatFragment" />
+        <action
+            android:id="@+id/action_nav_slot_details_to_nav_timeslot_chats_fragment"
+            app:destination="@id/nav_timeslot_chats_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/timeSlotEditFragment"
+        android:name="it.polito.g20app.TimeSlotEditFragment" />
+    <fragment
+        android:id="@+id/nav_skills_list"
+        android:name="it.polito.g20app.SkillsFragment"
+        android:label="All skills"
+        tools:layout="@layout/fragment_skills" >
+        <action
+            android:id="@+id/action_nav_skills_list_to_nav_adv_list"
+            app:destination="@id/nav_adv_list" />
+        <action
+            android:id="@+id/action_nav_skills_list_to_nav_show_profile"
+            app:destination="@id/nav_show_profile" />
+        <action
+            android:id="@+id/action_nav_skills_list_to_nav_skill_details"
+            app:destination="@id/nav_skill_details" />
+        <action
+            android:id="@+id/action_nav_skills_list_to_time_slots_assigned"
+            app:destination="@id/nav_time_slots_assigned" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_skill_details"
+        android:name="it.polito.g20app.SkillDetailsFragment"
+        android:label="Skill Details" >
+        <action
+            android:id="@+id/action_nav_skill_details_to_nav_slot_details3"
+            app:destination="@id/nav_slot_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_chatFragment"
+        android:name="it.polito.g20app.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_nav_chatFragment_to_nav_slot_details"
+            app:destination="@id/nav_slot_details" />
+        <action
+            android:id="@+id/action_nav_chatFragment_to_nav_timeslot_chats_fragment"
+            app:destination="@id/nav_timeslot_chats_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_timeslot_chats_fragment"
+        android:name="it.polito.g20app.TimeSlotChatsFragment"
+        android:label="timeslot_chats_fragment"
+        tools:layout="@layout/fragment_timeslot_chats" >
+        <action
+            android:id="@+id/action_nav_timeslot_chats_fragment_to_nav_chatFragment"
+            app:destination="@id/nav_chatFragment" />
+        <action
+            android:id="@+id/action_nav_timeslot_chats_fragment_to_nav_slot_details"
+            app:destination="@id/nav_slot_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_rating_fragment"
+        android:name="it.polito.g20app.RatingFragment"
+        android:label="fragment_rating"
+        tools:layout="@layout/fragment_rating" />
+    <fragment
+        android:id="@+id/ratingListFragment"
+        android:name="it.polito.g20app.RatingListFragment"
+        android:label="fragment_list_rating"
+        tools:layout="@layout/fragment_list_rating" />
+
+</navigation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_skills_list"
+            android:title="All skills" />
+        <item
+            android:id="@+id/nav_show_profile"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_adv_list"
+            android:title="My time slots" />
+        <item
+            android:id="@+id/nav_time_slots_saved"
+            android:title="Favourite Time Slots" />
+        <item
+            android:id="@+id/nav_time_slots_assigned"
+            android:title="Assigned Time Slots" />
+    </group>
+
+
+
+</menu>
