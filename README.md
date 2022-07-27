@@ -1,3 +1,4 @@
 # G20App
 
-This is the project of an android app about time banking for course "Mobile Application Development" of Politecnico di Torino.
+TimeBanking Android Application for the Mobile Development Application at Politecnico di Torino.
+Developed with: Giacomo Inghilleri, Davide Mammone
